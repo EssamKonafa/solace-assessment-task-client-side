@@ -19,11 +19,11 @@ export default function SideNav() {
     ]
 
     return (
-        <div className="h-screen w-[108px] py-[40px] px-[30px] gap-[40px] bg-white border-r flex flex-col">
+        <div className="h-screen min-w-[7.05%] py-[40px] px-[30px] gap-[40px] bg-white border-r flex flex-col items-center">
 
             {/* Logo Section */}
             <div>
-                <img src={logo} className='w-[45px] h-[45px]' alt='logo' />
+                <img src={logo} className='min-w-[45px] h-[45px]' alt='logo' />
             </div>
 
             {/* Navigation Items */}

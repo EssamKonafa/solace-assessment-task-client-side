@@ -3,7 +3,7 @@ import UserIcons from "./UserIcons"
 
 function Header() {
     return (
-        <div className="w-screen h-[113px] py-[24px] px-[40px] flex justify-between ">
+        <div className="h-[113px] py-[24px] px-[40px] flex justify-between ">
 
             <div className="w-[470px] h-[65px] space-y-[8px]">
                 {/*User Name */}

@@ -1,10 +1,12 @@
+import BasicInfo from "./components/BasicInfo"
 import Header from "./components/Header"
 
 function App() {
   return (
-    <>
-    <Header/>
-    </>
+    <div className="w-[92.95%]">
+      <Header />
+      <BasicInfo />
+    </div>
   )
 }
 
