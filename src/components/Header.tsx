@@ -1,4 +1,5 @@
 import Breadcrumb from "./BreadCrumb"
+import UserIcons from "./UserIcons"
 
 function Header() {
     return (
@@ -19,7 +20,7 @@ function Header() {
 
             {/*User Icons */}
             <div>
-
+                <UserIcons/>
             </div>
         </div>
     )
