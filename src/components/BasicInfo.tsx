@@ -2,16 +2,19 @@ import user from "../assets/userIcons/user.jpg"
 import cam from "../assets/userIcons/cam.svg"
 
 function BasicInfo() {
+    
     const active = true;
     const userInfo = [
         { index: "Personal Information" },
         { index: "Financial Information" }
     ]
     return (
-        <div className='w-[393px] h-[464px] top-[137px] left-[132px] rounded-[24px] p-[24px] space-y-[16px] absolute bg-white '>
+        <div className='w-[393px] h-[464px] rounded-[24px] p-[24px] space-y-[16px] bg-white '>
+            
+            {/*user info */}
             <div className="w-[345px] h-[226px] p-[16px] space-y-[16px]">
                 <img src={user} className="w-[120px] h-[120px] rounded-[39px] object-cover object-top" />
-                <button className="w-[40px] h-[40px] bg-[#F0F0F0] rounded-[50px] absolute top-[112px] left-[128px]">
+                <button className="w-[40px] h-[40px] bg-[#F0F0F0] rounded-[50px] absolute top-[112px] left-[151px]">
                     <img className="mx-auto" src={cam} />
                 </button>
                 <div className="w-[193px] h-[53px]">
@@ -22,6 +25,7 @@ function BasicInfo() {
 
             <hr className="text[#ECEEF1]" />
 
+            {/*information type */}
             <div className="h-[158px] py-[16px] space-y-[8px]">
                 {userInfo.map((index, item) => (
                     <div key={item} className="text-[18px] h-[59px]">
