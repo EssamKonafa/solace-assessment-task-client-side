@@ -1,7 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
 import arrowRight from "../assets/arrowRight.svg";
+import useUserStore from "../store/user";
 
 const Breadcrumb = () => {
+    const { userInfo }: any = useUserStore();
 
     const location = useLocation()
 
@@ -9,7 +11,7 @@ const Breadcrumb = () => {
         { url: "", label: "Dashboard" },
         { url: "", label: "HR manage" },
         { url: "", label: "Employees" },
-        { url: "/", label: "John Smith Profile" },
+        { url: "/", label: `${userInfo?.firstName} Profile` },
     ];
 
     return (
